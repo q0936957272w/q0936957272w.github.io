@@ -1,21 +1,36 @@
-<!DOCTYPE html>
-
 <html>
-
-
 <head>
-
-
-<title>website title</title>
-
-
+<style>
+a:link {color:black; text-decoration:underline;} 
+a:visited {color:red; text-decoration:overline;} 
+a:hover {font-size:20; color:blue; text-decoration:underline;} 
+a:active {color:green; text-decoration:underline;}
+    div p{	background-color:#000033; 	
+        color:white;      
+    }
+   
+    
+h1:link {color:black; text-decoration:underline;} 
+h1:visited {color:red; text-decoration:overline;} 
+h1:hover {font-size:20; color:blue; text-decoration:underline;} 
+h1:active {color:green; text-decoration:underline;}
+    
+</style>
 </head>
-
-
 <body>
+<a href="https://google.com" target=“_self”>測試文字</a>
 
-<i> 8888888555555 </i>
-<a href="https://google.com.tw"> google </a>
+
+ <div>
+        <h1>title</h1>
+        <p>Lorem會被選到</p>
+    </div>
+    <div>
+        <article>
+            <h1>title</h1>
+            <p>這個p的上一層是article,但還是在div下面, 也會被選到            </p>
+        </article>
+    </div>
 
 
 </body>
