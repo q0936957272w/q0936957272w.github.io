@@ -1,39 +1,221 @@
+
 <html>
 <head>
+
+</head>
+
 <style>
-a:link {color:black; text-decoration:underline;} 
-a:visited {color:red; text-decoration:overline;} 
-a:hover {font-size:20; color:blue; text-decoration:underline;} 
-a:active {color:green; text-decoration:underline;}
-    div p{	background-color:#000033; 	
-        color:white;      
+    *{
+        vertical-align:middle;
     }
+    #sidebar{
+    display:inline-block;
+    width:800px;
+    height:700px;
+    margin:1em;
+    border:1px solid green;
+        float:none;
+	width:auto;
+	height:auto;
    
     
-h1:link {color:black; text-decoration:underline;} 
-h1:visited {color:red; text-decoration:overline;} 
-h1:hover {font-size:20; color:blue; text-decoration:underline;} 
-h1:active {color:green; text-decoration:underline;}
     
+}
+    
+  
+
+
+#sidebar_left{
+    display:inline-block;
+    
+    width:100px;
+    height:100px;
+    margin:1em;
+    border:1px #666 dashed;
+  
+    
+    
+}
+  
+    
+   
+  
+#sidebar_right{
+    display:inline-block;
+    
+    width:100px;
+    height:200px;
+    margin:1em;
+    border:1px #666 dashed;
+    
+  
+    
+   
+}
+#sidebody{
+    display:inline-block;
+    width:100px;
+    height:300px;
+    margin:1em;
+    border:1px #666 dashed;
+   
+    
+
+    
+}
+  #jgf{
+      display:inline-block;
+    width:200px;
+    height:400px;
+  margin:1em;
+    border:1px #666 dashed;
+   
+    
+    
+   
+}
+    
+    
+    @media screen and (max-width: 400px) {
+		body {
+			background-color: lightblue;
+		}
+	}
+	
+	@media screen and (min-width: 400px) and  (max-width: 800px){
+		body {
+			background-color: yellow;
+		}
+	}	
+	
+	@media screen and (min-width: 800px) {
+		body {
+			background-color: snow;
+		}
+	}	
+
+         /* 無序清單製作 */
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: underline;
+        }
+        
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+        
+        li.dropdown {
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: deepskyblue;
+            min-width: 160px;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: yellow;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* 按鈕製作 */
+        
+        .button {
+            background-color: orange;
+            border: none;
+            color: blue;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: overline;
+            display: inline-block;
+            font-size: 16px;
+            cursor: progress;
+        }
+        
+        .button:hover {
+            color: white;
+            background-color: blue;
+        }
+        
+        .bn-dropdown-content {
+            display: none;
+            background-color: greenyellow;
+            width: 130px;
+            padding: 12px 16px;
+            position: absolute;
+            left: 480px;
+        }
+        
+        .button:hover .bn-dropdown-content {
+            display: block;
+        }
+
+
 </style>
-</head>
+
 <body>
-<a href="https://google.com" target=“_self”>測試文字</a>
+<div id="container">
+    <div id="sidebar">
+    <div id="headbox"></div>
+    
+    <div id="jgf"></div>
+    <div id="sidebar_left">1212</div>
+    <div id="sidebody"></div>
+    <div id="sidebar_right"></div>
+    <div id="after-box"></div>
+       
+       
+       
+        <h3>Choice 2: button groups.</h3>
 
+    <button class="button">Button1</button>
+    <button class="button">Button2</button>
+    <button class="button">Button3</button>
+    <a href="http://www.google.com" target="_blank" button class="button">Google</a>
 
- <div>
-        <h1>title</h1>
-        <p>Lorem會被選到</p>
+    <button class="button" a href="#">Dropdown
+        <div class="bn-dropdown-content">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+    </button>
+        
     </div>
-    <div>
-        <article>
-            <h1>title</h1>
-            <p>這個p的上一層是article,但還是在div下面, 也會被選到            </p>
-        </article>
-    </div>
-
-
+    
+   
+</div>
 </body>
-
-
 </html>
