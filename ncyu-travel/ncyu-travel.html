@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    
+
+
+
+    <style>
+    .navbar {
+        background-color: black;
+    }
+    
+    .navbar-brand {
+        font-size: 25px;
+    }
+    
+    .title {
+        border-top-width: 20px;
+    }
+    
+    hr.style-one {
+        border: 0;
+        height: 5px;
+        background: #333;
+        background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    }
+
+    ul.nav li ul{
+
+
+        display: none ;
+
+    }
+
+    ul.nav li:hover > ul{
+        display: block ;
+    } 
+
+
+
+
+    
+    
+</style>
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+
+    <div class="row">
+        <div class="col-md-2"></div>
+
+        <nav class="navbar navbar-default col-md-12">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#" style="color:white;">南故宮公公與太保寶寶的冒險之旅</a> </div>
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="ncyu-travel.html" style="color:white;" target=_self>首頁</a></li>
+                        <!--<li><a  style="color:white;" target="_blank">社區連結</a>
+
+                            <ul>
+
+                                <li><a href="https://taibao.cyhg.gov.tw/cp.aspx?n=B7E0652B10F73024&s=5654361B474B8EFF"  style="color:white;" >太保市後庄社區</a></li>
+
+                                <li><a href="https://taibao.cyhg.gov.tw/cp.aspx?n=B7E0652B10F73024&s=337EA9B16C7004DE" style="color:white;" >太保市港尾社區</a></li>
+                                <li><a href="https://taibao.cyhg.gov.tw/cp.aspx?n=B7E0652B10F73024&s=DD102593FDB1A032" style="color:white;" >太保市埤鄉社區</a></li>
+                            </ul>
+
+                        </li>-->
+                        <li><a  style="color:white;"  target="_blank">景點介紹</a>
+               <ul class="dropdown-menu">
+
+     <li><a href="index.html" style="color:white; background:black" >故宮南院</a></li>
+                                 <li><a href="back.html" style="color:white; background:black" >太保市後庄社區</a></li>
+
+                                 <li><a href="gangwei.html" style="color:white; background:black" >太保市港尾社區</a></li>
+                                 <li><a href="township.html" style="color:white; background:black" >太保市埤鄉社區</a></li>
+                             </ul>
+
+                        </li>
+
+
+
+                        <li><a href="ncyu-travel-map.html" style="color:white;" target="_blank">交通資訊</a></li>
+                        <li><a href="taibau-history.html" style="color:white;" target="_blank">太保歷史</a></li>
+                        <li><a href="ncyu-travel-vlog.html" style="color:white;" target="_blank">VLOG</a></li>
+                        
+
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+
+
+
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+
+
+
+
+
+            <div id="slideshow" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                 
+
+                    <div class="item active">
+                     <a href="index.html" target="_blank"><img src="20171027_180117_0032.jpg" alt="" style="width:1500px;  height:500px;">
+                     </a></div>
+                     <div class="item">
+                         <a href="township.html" target="_blank"><img src="IMG_6293.jpg" alt="" style="width:1500px;height:500px; ">
+                         </a></div>
+                         <div class="item">
+                             <a href="gangwei.html" target="_blank"><img src="IMG_1226.JPG" alt="" style="width:1500px;height:500px; ">
+                             </a></div>
+                             <div class="item">
+                                 <a href="back.html" target="_blank"><img src="IMG_1244.JPG" alt="" style="width:1500px; height:500px;">
+                                 </a></div>
+                                 <div class="item">
+                                     <a href="back.html" target="_blank"><img src="IMG_1246.JPG" alt="" style="width:1500px; height:500px;"></a>
+                                 </div>
+                                 <div class="item">
+                                     <a href="https://www.facebook.com/11Yongbo/" target="_blank">
+                                         <img src="IMG_1106.JPG" alt="" style="width:1500px; height:500px;">
+
+                                     </a></div>
+                                     <div class="item">
+                                         <a href="index.html" target="_blank"><img src="IMG_1262.JPG" alt="" style="width:1500px;height:500px; ">
+                                         </a></div>
+                                         <div class="item">
+                                             <a href="index.html" target="_blank"><img src="IMG_1263.JPG" alt="" style="width:1500px;height:500px; ">
+                                             </a></div>
+                                         </div>
+
+
+                                         <div class="control-btn">
+                                            <a href="#slideshow" class="left carousel-control" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hiddden="true"></span> </a>
+
+                                            <a href="#slideshow" class="right carousel-control" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hiddden="true"></span> </a>
+                                        </div>
+
+
+
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#slideshow" data-slide-to="0"></li>
+                                            <li data-target="#slideshow" data-slide-to="1"></li>
+                                            <li data-target="#slideshow" data-slide-to="2"></li>
+                                            <li data-target="#slideshow" data-slide-to="3"></li>
+                                            <li data-target="#slideshow" data-slide-to="4"></li>
+                                            <li data-target="#slideshow" data-slide-to="5"></li>
+                                            <li data-target="#slideshow" data-slide-to="6"></li>
+                                            <li data-target="#slideshow" data-slide-to="7"></li>
+                                        </ol>
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail">
+                                            <!--<a href="http://south.npm.gov.tw/zh-tw" target="_blank">-->
+                                                <img src="20171027_180117_0032.jpg" alt=""
+                                                style="width:200px; height:200px;"></a>
+                                                <div class="caption">
+                                                    <h3>故宮南院</h3>
+                                                    <p><!--<a href="http://south.npm.gov.tw/zh-tw"></a>-->
+                                                    國立故宮博物院南部院區，簡稱故宮南院，定位為「亞洲藝術文化博物館」，位於臺灣嘉義縣太保市，鄰近高鐵嘉義站以及蒜頭糖廠，主要展示品為亞洲藝術文化，另設有主題庭園、人工湖和旅館。</p>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-md-3">
+                                            <div class="thumbnail">
+                                                <!--<a href="https://taibao.cyhg.gov.tw/News_Content.aspx?n=8A33013523400F35&sms=8A1EBDEB5129D8BD&s=21D6FA8545C24E5A" target="_blank">-->
+                                                <img src="https://pic.pimg.tw/happy078/1482823479-1186651022_n.jpg?v=1482823480" alt=""
+                                                 style="width:200px; height:200px;"></a>
+                                                 <div class="caption">
+                                                    <h3>嘉義後庄保安宮</h3>
+                                                    <p><!--<a href="https://taibao.cyhg.gov.tw/News_Content.aspx?n=8A33013523400F35&sms=8A1EBDEB5129D8BD&s=21D6FA8545C24E5A"></a>-->簡介：
+
+                                                        溯自始祖楊氏由福建漳州府、平和縣、婆蔗社崙仔厝隨鄭王來臺，為求航海平安，迎請大帝護航渡海，定居太保溝後奉大帝於宅。迨至乾隆十年勘地今之庄北，以竹為架，茅草覆之而祀大帝，名曰保安宮。由於大帝神威顯赫，德被蒼生，揚族代代繁衍臻八百餘戶，地靈人傑，英才輩出，如溝前王得祿官拜水陸提督，為感念大帝庇佑，捐獻私財，於道光十四年，將簡陋之草廟改建為磚造，至咸豐十一年戴萬生亂起，本庄揚和尚率眾抗拒，族人遭兵燹之災，四處流散，殘剩卅餘戶，固守家園。
+
+                                                    </p>
+                                                    
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-6 col-md-3">
+                                            <div class="thumbnail">
+                                               <!-- <a href="https://taibao.cyhg.gov.tw/News_Content.aspx?n=8A33013523400F35&sms=8A1EBDEB5129D8BD&s=A3CEA41881C3F805" target="_blank">-->
+                                                	<img src="http://crgis.rchss.sinica.edu.tw/temples/ChiayiCounty/taibau/1001012-GBG/6e2f4fdd5bae591689c0.JPG/@@images/ac5075f1-fc2c-4d9c-a378-7dd3eea6f644.jpeg" alt=""
+                                                 style="width:200px; height:200px;"></a>
+                                                 <div class="caption">
+
+                                                    <h3>嘉義港尾港保宮</h3>
+                                                    <p><!--<a href="https://taibao.cyhg.gov.tw/News_Content.aspx?n=8A33013523400F35&sms=8A1EBDEB5129D8BD&s=A3CEA41881C3F805"></a>-->清嘉慶年間 黃氏宗族由廣東省潮洲府饒平縣榮前鄉花園社等厝祠堂，渡海來台，暫居黃厝港，定居地廣人稀瘴氣頗重屢感不順，無計可施，遂重返祖籍，恭迎三山國王福德正神來此鎮奉，老小事獲平安五穀豐收漸入佳境，迄黃磐降世，長大成人後，允文允武智勇雙全，上京面試以自創刀法魁星踢斗，承蒙皇上賞識受封武解元，並蒙國母恩召回京師受封國舅，閔浙海陸提督將軍，聞悉此事特來黃厝港堪察地理形勢，得知黃厝港乃水牛穴。 </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-sm-6 col-md-3">
+                                            <div class="thumbnail">
+                                                <!--<a href="https://taibao.cyhg.gov.tw/News_Content.aspx?n=8A33013523400F35&sms=8A1EBDEB5129D8BD&s=8AA40644E5CC5A0C" target="_blank">-->
+                                                <img src="https://vignette.wikia.nocookie.net/zh.uncyclopedia/images/d/d2/5%E8%81%96%E6%81%A9%E5%AE%AE.jpg/revision/latest?cb=20130615082407" alt=""
+                                                 style="width:200px; height:200px;"></a>
+                                                 <div class="caption">
+                                                    <h3>嘉義埤鄉聖恩宮
+                                                    </h3>
+                                                    <p><!--<a href="https://taibao.cyhg.gov.tw/News_Content.aspx?n=8A33013523400F35&sms=8A1EBDEB5129D8BD&s=8AA40644E5CC5A0C"></a> --> 本宮乃由浙江省普陀山不肯去觀音院之觀世音菩薩原靈前來開闢。奉三菩薩指示，於民國七十八年、七十九年、八十回不肯去觀音院鎮殿中尊菩薩蒞宮常駐，是以本宮之觀世音菩薩與普陀山之淵源乃一脈相連。本宮觀世音菩薩自稱「參吧哪耶」三菩薩，乃唐宋時西夏高麗國玉童子修得正果。菩薩降示詩文，自署法號「妙蓮」、「三音」。康熙、道光至第二次世界大戰期間，菩薩於埤麻腳舊庄游、黃等家三度降乩濟世，並在游家家堂留下香火。光復後菩薩雲游四海普渡眾生。</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <p>
+
+
+
+                                        <p>
+                                            
+                                            
+                                         
+                                         
+                                         <div class="col-md-9">
+                                             <hr class="style-one">
+                                             
+                                             <div class="page-header">
+
+                                                <h1><span style="font-family:fantasy;font-size:1.2cm;">美食與景點住宿</span></h1>
+
+                                                
+
+                                            </div>
+                                            
+                                            
+
+                                            <div class="col-sm-6 col-md-4">
+                                                <div class="box">
+                                                    <a href="https://www.facebook.com/11Yongbo/" target="_blank"><img src="http://www.hs-foods.com.tw/go168/ezcatfiles/hs-foods/img/pictures/1/104303_S_DSCN0607.jpg" alt="" style="width:300px; height:200px;"></a>
+                                                    <h3>
+                                                        勇伯地瓜酥
+                                                    </h3>
+                                                    <p>612 嘉義市
+                                                    嘉義縣太保市後庄10-6號</p>
+                                                    <p>
+                                                        電話：05 371 6767
+                                                        <P>
+                                                            營業時段：9:00 - 17:00
+                                                            
+
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-4">
+                                                        
+
+                                                        <div class="box">
+                                                            <a href="https://zh.wikipedia.org/wiki/%E9%AD%9A%E5%AF%AE%E9%81%BA%E5%9D%80" target="_blank"><img src="http://www.cdnews.com.tw/upload/201312/3/102557417.jpg" alt="" style="width:300px; height:200px;"></a>
+                                                            <h3>
+                                                                魚寮遺址
+                                                            </h3>
+                                                            <p>太保市高鐵大道與64縣道交叉口</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-6 col-md-4">
+                                                      
+                                                       
+                                                       
+                                                        
+                                                        <div class="box">
+                                                            <a href="https://www.booking.com/hotel/tw/huashe-chiayi-branch.zh-tw.html?aid=1288258;label=metagha-link-localuniversalTW-hotel-1906607_dev-desktop_los-1_bw-13_dow-Wednesday_defdate-1_room-0_lang-zh_curr-TWD_gstadt-2_rateid-0;sid=8c669f6285e51b59954f4162d84d9974;checkin=2018-01-24;checkout=2018-01-25;ucfs=1;srpvid=09e739f51c5e00f6;srepoch=1515658475;highlighted_blocks=190660704_92841953_0_1_0;all_sr_blocks=190660704_92841953_0_1_0;bshb=2;room1=A%2CA;hpos=1;hapos=1;dest_type=city;dest_id=900055011;srfid=7bfc23060115492fbb30c353edd82a0c36205641X1;from=searchresults;highlight_room=#hotelTmpl" target="_blank"><img src="http://bstatic.com/images/hotel/max1500_watermarked_standard_bluecom/4de/4de5bda196e81c3ec80ac6b428734c0f6d8a2cb9.jpg" alt="" style="width:300px; height:200px;"></a>
+                                                            <h3>
+                                                                故宮南院住宿推薦
+                                                            </h3>
+                                                            <p>樺舍商旅-嘉義館
+                                                             <P>
+                                                               地址：嘉義縣朴子市祥和三路西段23號
+                                                               <p> 電話： 05 320 6088
+                                                               </div>
+                                                               
+                                                           </div>
+                                                           
+                                                       </div>
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+    <!--<div class="col-md-3">
+   
+    <hr class="style-one">
+   
+     
+   
+    
+     <div class="box">
+
+
+
+             <br>
+
+                        <a href="https://read01.com/nLmxM.html" style="text-decoration:none;color:black;" target="_blank">
+                            <h1><span style="font-family:fantasy;font-size:1.5cm;"><p>  </p> </span></h1>
+                        </a>
+                    </div>
+   
+   </div>
+-->
+
+
+
+
+
+
+<marquee direction="right" height="100" scrollamount="10" behavior="alternate" bgcolor="#000000">
+        <font color="white" size="4" >國立嘉義大學
+
+        <p>
+         <p>
+            四朵花兩枝草
+            <p>
+            嘉義市新民路580號</font></marquee>
+            
+            
+
+            
+
+
+            
+            
+            
+        </body>
+
+
+
+
+
+        </html>
